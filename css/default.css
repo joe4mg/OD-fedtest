@@ -1,0 +1,78 @@
+body{
+    padding:0 0 20px 0;
+}
+
+.wrap{
+    margin:0 auto;
+    max-width:940px;
+    padding:0 10px;
+}
+
+/*== Header styling ==*/
+
+header{
+    margin-top:40px;
+}
+    header .logo img{
+        width:auto;
+        height:auto;
+    }
+    header nav{
+        line-height:1;
+        letter-spacing:-0.01em;
+        display:block;
+        float:left;
+        width:100%;
+        text-align:left;
+    }
+    header nav ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+        width:90%;
+    }
+        header nav ul li{
+            margin-right:10px;
+            margin-bottom:8px;
+        }
+        header nav ul li+li{
+            padding-left:10px;
+        }
+
+/*== Feature styles ==*/
+
+.subtitle{
+    font-size:1.5em;
+}
+
+.subtitle:before{
+    content:url(../img/subtitle-flourish-left.png);
+}
+
+.subtitle:after{
+    content:url(../img/subtitle-flourish-right.png);
+}
+
+/*== Column styling ==*/
+section.feature-group > article.feature + article.feature{
+    margin-left:2%;
+}
+
+/*== two column ==*/
+.feature-group-2 > article.feature{
+    width:49%;
+}
+
+section.feature-group-2 > article.feature a span{
+    padding:20px 10px;
+    font-size:0.8em;
+}
+
+/*== three column ==*/
+.feature-group-3 > article.feature{
+    width:32%;
+}
+
+.feature-group-3 > article.feature span{
+    padding-top:10px;
+}

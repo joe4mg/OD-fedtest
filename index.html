@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joe Campion - Orange Digital page layout</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--
+        Not sure if part of the task is to add Javascript
+        for the mobile nav and main slider - I've added bxSlider for
+        the main slider and just left the mobile nav hidden.
+        I've also left the JS at the top of the page and inline so
+        it is self contained for the sake of this example page. JC
+    -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
+    <script>
+        $(document).ready(function(){
+            $('#section-primary .slider').bxSlider();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <!--
+        Mobile devices are served global.css - anything higher is also
+        served default.css via a media query.
+        IE8 is always served both global and default css files.
+    -->
+
+    <!--[if (lt IE 9)&(!IEMobile)]>
+    <style type="text/css" media="all">
+        @import url("css/default.css");
+    </style>
+    <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <style type="text/css" media="all and (min-width: 540px) and (min-device-width: 540px), (min-width: 540px) and (orientation:landscape)">
+        @import url("css/default.css");
+    </style>
+    <!--<![endif]-->
+</head>
+<body>
+    <div class="wrap clearfix">
+        <header>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="My Brand - This is my logo"/>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Christmas</a></li>
+                    <li><a href="#">Main meals</a></li>
+                    <li><a href="#">Puddings</a></li>
+                    <li><a href="#">Ranges</a></li>
+                    <li><a href="#">Entertaining</a></li>
+                    <li><a href="#">Special Diets</a></li>
+                </ul>
+                <a href="#" class="nav-extra">About us</a>
+            </nav>
+        </header>
+        <section id="section-primary" class="main-banner">
+            <div class="slider">
+                <article class="feature active">
+                    <a href="#">
+                        <img src="img/feature.jpg" alt="3 Pizzas for &pound;12 - Buy Now"/>
+                    </a>
+                </article>
+                <article class="feature inactive">
+                    <a href="#">
+                        <img src="img/feature.jpg" alt="3 Pizzas for &pound;12 - Buy Now"/>
+                    </a>
+                </article>
+                <article class="feature inactive">
+                    <a href="#">
+                        <img src="img/feature.jpg" alt="3 Pizzas for &pound;12 - Buy Now"/>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section id="section-secondary" class="feature-group feature-group-3">
+            <h1 class="subtitle">This week's features</h1>
+            <article class="feature">
+                <a href="#">
+                    <img src="img/sec1.jpg" alt="description of pic"/>
+                    <span>Latest event</span>
+                </a>
+            </article>
+            <article class="feature">
+                <a href="#">
+                    <img src="img/sec2.jpg" alt="description of pic"/>
+                    <span>Newest product range</span>
+                </a>
+            </article>
+            <article class="feature">
+                <a href="#">
+                    <img src="img/sec3.jpg" alt="description of pic"/>
+                    <span>Latest special offer</span>
+                </a>
+            </article>
+        </section>
+        <section id="section-tertiary" class="feature-group feature-group-2">
+            <article class="feature">
+                <a href="#">
+                    <img src="img/tert1.jpg" alt="description of pic"/>
+                    <span>Featured store: Tunbridge Wells</span>
+                </a>
+            </article>
+            <article class="feature">
+                <a href="#">
+                    <img src="img/tert2.jpg" alt="description of pic"/>
+                    <span>Our cooks: Get to know them</span>
+                </a>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
