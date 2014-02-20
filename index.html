@@ -9,8 +9,8 @@
 
     <!--
         Not sure if part of the task is to add Javascript
-        for the mobile nav and main slider - I've added bxSlider for
-        the main slider and just left the mobile nav hidden.
+        for the mobile nav and main slider - I've added bxSlider plugin
+        for the main slider and just left the mobile nav hidden.
         I've also left the JS at the top of the page and inline so
         it is self contained for the sake of this example page. JC
     -->
@@ -42,6 +42,18 @@
         @import url("css/default.css");
     </style>
     <!--<![endif]-->
+
+    <!--
+        Also force IE8 to use HTML5 elements
+    -->
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+    </script>
+    <![endif]-->
 </head>
 <body>
     <div class="wrap clearfix">

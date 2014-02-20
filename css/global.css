@@ -156,6 +156,7 @@ section.feature-group-2 > article.feature a span{
     -moz-box-sizing:border-box; /* required for Firefox until 29.0 release */
     box-sizing:border-box;
     padding:15px 10px;
+    background-color:black; /** fallback for lack of rgba support **/
     background-color:rgba(68,68,68,0.75);
     color:#fff;
     font-size:0.7em;
