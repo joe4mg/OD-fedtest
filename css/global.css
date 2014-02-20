@@ -90,7 +90,7 @@ header{
 
 section > article.feature{
     float:left;
-    -moz-box-sizing:border-box;
+    -moz-box-sizing:border-box;  /* required for Firefox until 29.0 release */
     box-sizing:border-box;
     width:100%;
     text-transform:uppercase;
@@ -153,7 +153,7 @@ section.feature-group-2 > article.feature a span{
     left:0;
     width:100%;
     display:inline-block;
-    -moz-box-sizing:border-box;
+    -moz-box-sizing:border-box; /* required for Firefox until 29.0 release */
     box-sizing:border-box;
     padding:15px 10px;
     background-color:rgba(68,68,68,0.75);
